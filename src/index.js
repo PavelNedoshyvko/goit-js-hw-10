@@ -54,7 +54,7 @@ function getBreeds() {
 			refs.select.classList.remove('is-hidden');
 			refs.loader.classList.add('is-hidden');
 			new SlimSelect({
-				select: '.breed-select-js',
+				select: '.breed-select',
 			})
 		})
 		.catch(error => {
