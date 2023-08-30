@@ -9,11 +9,11 @@ const refs = {
 	loader: document.querySelector('.loader'),
 	error: document.querySelector('.error'),
 	catInfo: document.querySelector('.cat-info'),
-}
+};
 
 refs.select.addEventListener('change', onChangeSelect);
 
-getBreeds()
+getBreeds();
 
 
 function onChangeSelect(evt) {
@@ -74,8 +74,7 @@ function createSelectBreeds(breeds) {
 	return breeds.map(({ id, name }) =>
 				`<option value=${id}>${name}</option>`
 	).join('');
-	
-}
+};
 
 function createMarkupCat(breed) {
 	const [{ url, breeds: [{ name, description, temperament }] }] = breed;
@@ -87,5 +86,4 @@ function createMarkupCat(breed) {
 			<span class="temperament">Temperament:</span>
 			${temperament}</p>
 			</div>`;
-}
-
+};
